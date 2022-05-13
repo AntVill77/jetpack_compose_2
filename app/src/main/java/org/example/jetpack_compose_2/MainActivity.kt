@@ -23,21 +23,21 @@ import org.example.jetpack_compose_2.ui.theme.Jetpack_compose_2Theme
 import java.time.format.TextStyle
 
 private val messages: List<MyMessage> = listOf(
-    MyMessage("Hola Mundo1", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
-    MyMessage("Hola Mundo2", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"),
-    MyMessage("Hola Mundo3", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"),
-    MyMessage("Hola Mundo4", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"),
-    MyMessage("Hola Mundo5", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"),
-    MyMessage("Hola Mundo6", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"),
-    MyMessage("Hola Mundo7", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"),
-    MyMessage("Hola Mundo8", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
-    MyMessage("Hola Mundo9", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
-    MyMessage("Hola Mundoa", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
-    MyMessage("Hola Mundob", "Estas listo"),
-    MyMessage("Hola Mundoc", "Estas listo"),
-    MyMessage("Hola Mundod", "Estas listo"),
-    MyMessage("Hola Mundoe", "Estas listo"),
-    MyMessage("Hola Mundof", "Estas listo"),
+    MyMessage("Hola Rama1", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
+    MyMessage("Hola Rama2", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"),
+    MyMessage("Hola Rama3", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"),
+    MyMessage("Hola Rama4", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"),
+    MyMessage("Hola Rama5", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"),
+    MyMessage("Hola Rama6", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"),
+    MyMessage("Hola Rama7", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"),
+    MyMessage("Hola Rama8", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+    MyMessage("Hola Rama9", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+    MyMessage("Hola Ramaa", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+    MyMessage("Hola Ramab", "Estas listo"),
+    MyMessage("Hola Ramac", "Estas listo"),
+    MyMessage("Hola Ramad", "Estas listo"),
+    MyMessage("Hola Ramae", "Estas listo"),
+    MyMessage("Hola Ramaf", "Estas listo"),
 )
 
 class MainActivity : ComponentActivity() {
