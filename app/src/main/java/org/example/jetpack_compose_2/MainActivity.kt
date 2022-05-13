@@ -4,18 +4,15 @@ import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
+import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
@@ -26,16 +23,16 @@ import org.example.jetpack_compose_2.ui.theme.Jetpack_compose_2Theme
 import java.time.format.TextStyle
 
 private val messages: List<MyMessage> = listOf(
-    MyMessage("Hola Mundo1", "Estas listo"),
-    MyMessage("Hola Mundo2", "Estas listo"),
-    MyMessage("Hola Mundo3", "Estas listo"),
-    MyMessage("Hola Mundo4", "Estas listo"),
-    MyMessage("Hola Mundo5", "Estas listo"),
-    MyMessage("Hola Mundo6", "Estas listo"),
-    MyMessage("Hola Mundo7", "Estas listo"),
-    MyMessage("Hola Mundo8", "Estas listo"),
-    MyMessage("Hola Mundo9", "Estas listo"),
-    MyMessage("Hola Mundoa", "Estas listo"),
+    MyMessage("Hola Mundo1", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
+    MyMessage("Hola Mundo2", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"),
+    MyMessage("Hola Mundo3", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"),
+    MyMessage("Hola Mundo4", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"),
+    MyMessage("Hola Mundo5", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"),
+    MyMessage("Hola Mundo6", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"),
+    MyMessage("Hola Mundo7", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"),
+    MyMessage("Hola Mundo8", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+    MyMessage("Hola Mundo9", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+    MyMessage("Hola Mundoa", "Estas listo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
     MyMessage("Hola Mundob", "Estas listo"),
     MyMessage("Hola Mundoc", "Estas listo"),
     MyMessage("Hola Mundod", "Estas listo"),
@@ -89,25 +86,27 @@ fun MyImage(){
 }
 @Composable
 fun MyTexts(message: MyMessage){
-    Column(modifier = Modifier.padding(start = 8.dp)) {
+    var expanded by remember { mutableStateOf(false) }
+    Column(modifier = Modifier.padding(start = 8.dp).clickable {
+       expanded = !expanded
+    }) {
         MyText(
             message.title,
-            MaterialTheme.colors.primaryVariant,
+            MaterialTheme.colors.primaryVariant
 
             )
         Spacer(modifier = Modifier.height(16.dp))
         MyText(
             message.body,
         MaterialTheme.colors.onBackground,
-
-
+            if(expanded) Int.MAX_VALUE else 1
             )
 
     }
 }
 @Composable
-fun MyText(text: String, color: Color){
-    Text(text, color = color)
+fun MyText(text: String, color: Color, lines: Int = Int.MAX_VALUE){
+    Text(text, color = color, maxLines = lines)
 }
 
 
